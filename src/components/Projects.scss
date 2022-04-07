@@ -1,5 +1,12 @@
 @import "./variables.scss";
 .projects {
-    size: 100%;
+    // size: 100%;
     background-color: $color1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#projects {
+    margin: 50px;
 }
