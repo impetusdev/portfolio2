@@ -1,9 +1,10 @@
+@import "./variables.scss";
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    // background-image: linear-gradient(to right, #26356E, #C0A14E, #457BA4, #133B5C, #C0A14E, #C39937);
-    background-color: #133B5C;
+    // background-image: linear-gradient(to right, #26356E, #C0A14E, #457BA4, $color2, #C0A14E, #C39937);
+    background-color: $color2;
     overflow: hidden;
     position: fixed;
     top: 0;
@@ -15,7 +16,7 @@ ul {
 }
 
 a {
-    color: #FCDAB7;
+    color: $color4;
     float: left;
     display: block;
     text-align: center;
