@@ -1,6 +1,11 @@
 import './Section.scss';
-// import { ReactComponent as YourSvg } from 'public/skills/c-sharp.svg';
-// import { ReactComponent as IconMenu } from '/c-sharp.svg'
+
+function parseFileName(inputFileLoc) {
+    const result = inputFileLoc.match(new RegExp(/(?<=\/static\/media\/)(.*?)(?=\.)/));
+ 
+    return result[1];
+}
+
 
 export default function Section(props){
     function importAll(r) {
@@ -8,24 +13,24 @@ export default function Section(props){
     }
 
     const databaseIcons = importAll(require.context('../icons/database', false, /\.(svg)$/)).map(image => {
-        console.log(image);
         return {
             address: image,
-            name: ''
+            name: parseFileName(image)
         }
+        
     })
 
     console.log('databaseIcons', databaseIcons);
     const frameworkIcons = importAll(require.context('../icons/framework', false, /\.(svg)$/)).map(image => {
         return {
             address: image,
-            name: ''
+            name: parseFileName(image)
         }
     })
     const languageIcons = importAll(require.context('../icons/language', false, /\.(svg)$/)).map(image => {
         return {
             address: image,
-            name: ''
+            name: parseFileName(image)
         }
     })
     
