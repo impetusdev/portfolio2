@@ -3,6 +3,7 @@ import Nav from './components/Nav';
 import Section from './components/Section';
 import Projects from './components/Projects';
 import './App.css';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Section></Section>
       <Projects></Projects>
       <Nav></Nav>
+      <Footer></Footer>
       
     </div>
   );
