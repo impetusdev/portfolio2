@@ -4,7 +4,7 @@ h1 {
     font-size: 110px;
     margin: 67 0 0 0;
     font-weight: 500;
-    color: $color4;
+    color: $links;
 }
 
 .section {
@@ -27,7 +27,7 @@ h1 {
 }
 
 .title {
-    color: $color2;
+    color: $text;
     margin: 0;
     padding: 10px;
     font-size: 50px;
@@ -41,7 +41,7 @@ h1 {
 h3 {
     font-family: 'Sora', sans-serif;
     font-weight: 400;
-    color: $color2;
+    color: $text;
     font-size: 30px;
     margin: 10px;
 }

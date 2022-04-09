@@ -3,12 +3,17 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    // background-image: linear-gradient(to right, #26356E, #C0A14E, #457BA4, $color2, #C0A14E, #C39937);
+    background-image: linear-gradient(to right, $color1, $color1, $color4);
     background-color: $color2;
     overflow: hidden;
     position: fixed;
     top: 0;
     width: 100%;
+    // margin: 16px 0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .05), 2px 2px 10px $text;
+    border-radius: 4px;
+    // padding: 16px;
+    // width: 160px;
 }
 
 .after {
@@ -16,7 +21,7 @@ ul {
 }
 
 a {
-    color: $color4;
+    color: $links;
     float: left;
     display: block;
     text-align: center;
