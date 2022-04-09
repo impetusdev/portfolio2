@@ -41,7 +41,10 @@ export default function Section(props){
             <div className='skill'>
                 {
                     languageIcons?.map(image => {
-                        return <img src={image.address} alt="asdfadsf" />
+                        return <figure>
+                            <img src={image.address} alt="asdfadsf" />
+                            <figcaption>{image.name}</figcaption>
+                        </figure>
                     })
                 }
             </div>
@@ -49,7 +52,10 @@ export default function Section(props){
             <div className='skill'>
                 {
                     frameworkIcons?.map(image => {
-                        return <img src={image.address} alt="asdfadsf" />
+                        return <figure>
+                            <img src={image.address} alt="asdfadsf" />
+                            <figcaption>{image.name}</figcaption>
+                        </figure>
                     })
                 }
             </div>
@@ -57,7 +63,10 @@ export default function Section(props){
             <div className='skill'>
                 {
                     databaseIcons?.map(image => {
-                        return <img src={image.address} alt="asdfadsf" />
+                        return <figure>
+                            <img src={image.address} alt="asdfadsf" />
+                            <figcaption>{image.name}</figcaption>
+                        </figure>
                     })
                 }
             </div>
