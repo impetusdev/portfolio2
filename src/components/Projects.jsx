@@ -1,5 +1,5 @@
 import Project from './Project';
-import './Section.scss';
+import './Skills.scss';
 import './Projects.scss';
 
 export default function Projects(props){

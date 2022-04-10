@@ -1,5 +1,5 @@
 import './AboutMe.scss';
-import './Section'
+import './Skills'
 
 export default function AboutMe(props){
 

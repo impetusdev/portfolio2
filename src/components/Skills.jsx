@@ -1,4 +1,4 @@
-import './Section.scss';
+import './Skills.scss';
 
 function parseFileName(inputFileLoc) {
     const result = inputFileLoc.match(new RegExp(/(?<=\/static\/media\/)(.*?)(?=\.)/));
@@ -7,7 +7,7 @@ function parseFileName(inputFileLoc) {
 }
 
 
-export default function Section(props){
+export default function Skills(props){
     function importAll(r) {
         return r.keys().map(r);
     }
