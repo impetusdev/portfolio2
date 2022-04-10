@@ -1,7 +1,9 @@
 @import "./variables.scss";
 .footer {
     height: 10vh;
-    background-color: white;
+    // background-color: $color1;
+    // width: 100vw;
+    margin: auto;
 }
 
 .footer h2 {
@@ -15,5 +17,15 @@
 }
 
 .links {
-    width: 100px;
+    margin: auto;
+    width: 20%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer a {
+    top: 50%;
+    /* account for padding and border if not using box-sizing: border-box; */
 }
