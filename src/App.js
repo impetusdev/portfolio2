@@ -10,10 +10,11 @@ function App() {
   return (
     <div className="App">
       <Banner></Banner>
+      <Nav></Nav>
+      
       <AboutMe></AboutMe>
       <Skills></Skills>
       <Projects></Projects>
-      <Nav></Nav>
 
       <Footer></Footer>
     </div>
