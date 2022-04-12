@@ -3,7 +3,7 @@ import './Skills'
 
 export default function AboutMe(props){
 
-    return <div className='section'>
+    return <div className='section' id='aboutMe'>
         <div className='container'>
             <h1 className='title'>About Me</h1>
             <section>I’m a Sydney based software developer, with a background in mechanical engineering, marketing, finance and customer service. I am currently undertaking the General Assembly Software Engineering Immersive.</section>

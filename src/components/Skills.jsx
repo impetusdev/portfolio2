@@ -34,7 +34,7 @@ export default function Skills(props){
         }
     })
     
-    return <div className='section'>
+    return <div className='section' id='skills'>
         <div className='container'>
             <h1 className='title'>Skills</h1>
             <h3>Languages</h3>

@@ -13,15 +13,21 @@ export default function Banner(props) {
         return () => window.removeEventListener('scroll', onScroll);
     }, []);
 
+
+    //TODO: attach a scrolling funciton to each of these links
+    const scroll = (target) => {
+        let element = document.getElementById(target);
+        element && element.scrollIntoView({ behavior: "smooth", block: "start"});
+    }
     
 
     
     //TODO: make these links the ones for the actual sections. 
     return <div>
         <ul className={offset > window.innerHeight ? 'sticky' : ''}>
-            <li><a className='navLink' href='https://www.linkedin.com/in/laurence-qi-a4944513b/'>About Me</a></li>
-            <li><a className='navLink' href='https://github.com/impetusdev'>Skills</a></li>
-            <li><a className='navLink' href='https://twitter.com/life_is_a_model'>Projects</a></li>
+            <li onClick={scroll('aboutMe')} className='navLink'>About Me</li>
+            <li onClick={scroll('skills')} className='navLink'>Skills</li>
+            <li  onClick={scroll('skills')} className='navLink'>Projects</li>
         </ul>
         <ul className={offset > window.innerHeight ? 'empty' : ''}><li></li></ul>
     </div>
