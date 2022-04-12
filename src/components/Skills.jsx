@@ -12,6 +12,15 @@ export default function Skills(props){
         return r.keys().map(r);
     }
 
+    const getNameObj = (folderName) => {
+        return importAll(require.context(`../icons/${folderName}`, false, /\.(svg)$/)).map(image => {
+            return {
+                address: image,
+                name: parseFileName(image)
+            }
+        })
+    }
+
     const databaseIcons = importAll(require.context('../icons/database', false, /\.(svg)$/)).map(image => {
         return {
             address: image,
@@ -20,7 +29,6 @@ export default function Skills(props){
         
     })
 
-    console.log('databaseIcons', databaseIcons);
     const frameworkIcons = importAll(require.context('../icons/framework', false, /\.(svg)$/)).map(image => {
         return {
             address: image,
@@ -28,6 +36,12 @@ export default function Skills(props){
         }
     })
     const languageIcons = importAll(require.context('../icons/language', false, /\.(svg)$/)).map(image => {
+        return {
+            address: image,
+            name: parseFileName(image)
+        }
+    })
+    const learningIcons = importAll(require.context('../icons/learning', false, /\.(svg)$/)).map(image => {
         return {
             address: image,
             name: parseFileName(image)
@@ -63,6 +77,17 @@ export default function Skills(props){
             <div className='skill'>
                 {
                     databaseIcons?.map(image => {
+                        return <figure key={image.name}>
+                            <img src={image.address} alt="asdfadsf" />
+                            <figcaption>{image.name}</figcaption>
+                        </figure>
+                    })
+                }
+            </div>
+            <h3>Learnings</h3>
+            <div className='skill'>
+                {
+                    learningIcons?.map(image => {
                         return <figure key={image.name}>
                             <img src={image.address} alt="asdfadsf" />
                             <figcaption>{image.name}</figcaption>
