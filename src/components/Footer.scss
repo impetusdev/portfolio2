@@ -1,14 +1,13 @@
 @import "./variables.scss";
 .footer {
     height: 10vh;
-    // background-color: $color1;
-    // width: 100vw;
     margin: auto;
 }
 
-.footer h2 {
-    color: navy;
-    margin-top: 0px;
+.footer h3 {
+    margin-top: 20px;
+    color: $color1;
+    padding: 0.5vw;
 }
 
 .footer img {
