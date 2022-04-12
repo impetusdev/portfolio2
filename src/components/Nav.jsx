@@ -17,7 +17,7 @@ export default function Banner(props) {
             <a href='#aboutMe' className='navLink'>About Me</a>
             <a href='#skills' className='navLink'>Skills</a>
             <a href='#projects' className='navLink'>Projects</a>
-            <a href='#footer' className='navLink' id='contactMe'>Contact Me</a>
+            <a href='#footer' className='navLink' id='connect'>Connect</a>
         </ul>
         <ul className={offset > window.innerHeight ? 'empty' : ''}><li></li></ul>
     </div>
