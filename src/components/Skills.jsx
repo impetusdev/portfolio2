@@ -12,15 +12,6 @@ export default function Skills(props){
         return r.keys().map(r);
     }
 
-    const getNameObj = (folderName) => {
-        return importAll(require.context(`../icons/${folderName}`, false, /\.(svg)$/)).map(image => {
-            return {
-                address: image,
-                name: parseFileName(image)
-            }
-        })
-    }
-
     const databaseIcons = importAll(require.context('../icons/database', false, /\.(svg)$/)).map(image => {
         return {
             address: image,
@@ -28,6 +19,8 @@ export default function Skills(props){
         }
         
     })
+
+    console.log('databaseIcons:', databaseIcons);
 
     const frameworkIcons = importAll(require.context('../icons/framework', false, /\.(svg)$/)).map(image => {
         return {
