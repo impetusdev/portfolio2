@@ -1,7 +1,7 @@
 import './Skills.scss';
 
 function parseFileName(inputFileLoc) {
-    const result = inputFileLoc.match(new RegExp(/(?<=\/static\/media\/)(.*?)(?=\.)/));
+    const result = inputFileLoc.match(new RegExp(/(?<=\/)(.*?)(?=\.svg)/));
  
     return result[1];
 }
@@ -9,44 +9,20 @@ function parseFileName(inputFileLoc) {
 
 export default function Skills(props){
     function importAll(r) {
-        return r.keys().map(r);
-    }
-
-    const getNameObj = (folderName) => {
-        return importAll(require.context(`../icons/${folderName}`, false, /\.(svg)$/)).map(image => {
+        return r.keys().map( address => {
+            console.log(`address:`, address)
+            // console.log(`The file name after parsing is: ${parseFileName(address)}`)
             return {
-                address: image,
-                name: parseFileName(image)
+                address,
+                name: parseFileName(address),
             }
-        })
+        });
     }
 
-    const databaseIcons = importAll(require.context('../icons/database', false, /\.(svg)$/)).map(image => {
-        return {
-            address: image,
-            name: parseFileName(image)
-        }
-        
-    })
-
-    const frameworkIcons = importAll(require.context('../icons/framework', false, /\.(svg)$/)).map(image => {
-        return {
-            address: image,
-            name: parseFileName(image)
-        }
-    })
-    const languageIcons = importAll(require.context('../icons/language', false, /\.(svg)$/)).map(image => {
-        return {
-            address: image,
-            name: parseFileName(image)
-        }
-    })
-    const learningIcons = importAll(require.context('../icons/learning', false, /\.(svg)$/)).map(image => {
-        return {
-            address: image,
-            name: parseFileName(image)
-        }
-    })
+    const databaseIcons = importAll(require.context('../icons/database', false, /\.(svg)$/))
+    const frameworkIcons = importAll(require.context('../icons/framework', false, /\.(svg)$/))
+    const languageIcons = importAll(require.context('../icons/language', false, /\.(svg)$/))
+    const learningIcons = importAll(require.context('../icons/learning', false, /\.(svg)$/))
     
     return <div className='section' id='skills'>
         <div className='container'>
