@@ -24,11 +24,12 @@ ul {
     backdrop-filter: blur(50px);
 }
 
-a {
+.navLink {
     color: $links;
     float: left;
     display: block;
     text-align: center;
     padding: 14px;
     text-decoration: none;
+    margin: 0px;
 }

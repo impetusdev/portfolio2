@@ -8,8 +8,8 @@ export default function Project({title, imgSrc, description, demo, repo}){
         <img  src={imgSrc} alt="yo" />
         <section>{description}</section>
         <div className='links'>
-            <a href={demo}>DEMO</a>
-            <a href={repo}>REPO</a>
+            <a className='underline' href={demo}>DEMO</a>
+            <a className='underline' href={repo}>REPO</a>
         </div>
     </div>
 }
