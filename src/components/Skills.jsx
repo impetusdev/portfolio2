@@ -6,20 +6,18 @@ function parseFileName(inputFileLoc) {
     return result[1];
 }
 
-
 export default function Skills(props){
 
     function importAll(r) {
         return r.keys().map(r);
     }
 
-    // const databaseIcons = importAll(require.context('../icons/databases', false, /\.(svg)$/)).map(image => {
-    //     return {
-    //         address: image,
-    //         name: parseFileName(image)
-    //     }
-    // })
-
+    const databaseIcons = importAll(require.context('../icons/databases', false, /\.(svg)$/)).map(image => {
+        return {
+            address: image,
+            name: parseFileName(image)
+        }
+    })
     const frameworkIcons = importAll(require.context('../icons/frameworks', false, /\.(svg)$/)).map(image => {
         return {
             address: image,
@@ -65,7 +63,7 @@ export default function Skills(props){
                 }
             </div>
             <h3>Databases</h3>
-            {/* <div className='skill'>
+            <div className='skill'>
                 {
                     databaseIcons?.map(image => {
                         return <figure key={image.name}>
@@ -74,7 +72,7 @@ export default function Skills(props){
                         </figure>
                     })
                 }
-            </div> */}
+            </div>
             <h3>Learning</h3>
             <div className='skill'>
                 {
