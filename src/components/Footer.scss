@@ -11,7 +11,7 @@
 }
 
 .footer img {
-    width: 3vw;
+    width: 5vw;
     padding: 0.5vw;
 }
 
@@ -27,4 +27,11 @@
 .footer a {
     top: 50%;
     /* account for padding and border if not using box-sizing: border-box; */
+}
+
+@media only screen and (max-width: 700px) {
+    .footer img {
+        width: 10vw;
+        padding: 0.5vw;
+    }
 }

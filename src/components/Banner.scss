@@ -41,12 +41,12 @@ h2 {
 @media only screen and (max-width: 700px) {
     #name {
         font-size: 70px;
+        margin-top: 4vh;
+    }
+    #profile {
+        margin-top: 10vh;
     }
     h2 {
         font-size: 50px;
-    }
-    .container {
-        width: auto;
-        margin: 30px;
     }
 }

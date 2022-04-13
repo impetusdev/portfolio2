@@ -42,3 +42,10 @@ html {
     position: absolute;
     right: 0px;
 }
+
+@media only screen and (max-width: 700px) {
+    a {
+        padding: 3px;
+        font-size: 16px;
+    }
+}

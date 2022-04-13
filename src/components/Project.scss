@@ -5,7 +5,7 @@
 }
 
 .project img {
-    width: 30vw;
+    width: 35vw;
 }
 
 section {
@@ -63,5 +63,14 @@ a::before {
         left: 0;
         right: auto;
         width: 100%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .project img {
+        width: 70vw;
+    }
+    section {
+        padding: 10px;
     }
 }

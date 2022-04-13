@@ -8,17 +8,11 @@ function parseFileName(inputFileLoc) {
 
 
 export default function Skills(props){
-    const iconFolders = [ 'Languages', 'Frameworks', 'Databases', 'Learning' ];
 
     function importAll(r) {
         return r.keys().map(r);
     }
 
-    const hello = iconFolders.map(folder => {
-        return 'hello';
-    })
-
-    
     const databaseIcons = importAll(require.context('../icons/Databases', false, /\.(svg)$/)).map(image => {
         return {
             address: image,
@@ -84,7 +78,7 @@ export default function Skills(props){
                     })
                 }
             </div>
-            <h3>Learnings</h3>
+            <h3>Learning</h3>
             <div className='skill'>
                 {
                     learningIcons?.map(image => {
