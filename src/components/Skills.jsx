@@ -13,29 +13,27 @@ export default function Skills(props){
         return r.keys().map(r);
     }
 
-    const databaseIcons = importAll(require.context('../icons/Databases', false, /\.(svg)$/)).map(image => {
+    const databaseIcons = importAll(require.context('../icons/databases', false, /\.(svg)$/)).map(image => {
         return {
             address: image,
             name: parseFileName(image)
         }
-        
     })
-
     console.log('databaseIcons:', databaseIcons);
 
-    const frameworkIcons = importAll(require.context('../icons/Frameworks', false, /\.(svg)$/)).map(image => {
+    const frameworkIcons = importAll(require.context('../icons/frameworks', false, /\.(svg)$/)).map(image => {
         return {
             address: image,
             name: parseFileName(image)
         }
     })
-    const languageIcons = importAll(require.context('../icons/Languages', false, /\.(svg)$/)).map(image => {
+    const languageIcons = importAll(require.context('../icons/languages', false, /\.(svg)$/)).map(image => {
         return {
             address: image,
             name: parseFileName(image)
         }
     })
-    const learningIcons = importAll(require.context('../icons/Learning', false, /\.(svg)$/)).map(image => {
+    const learningIcons = importAll(require.context('../icons/learning', false, /\.(svg)$/)).map(image => {
         return {
             address: image,
             name: parseFileName(image)
