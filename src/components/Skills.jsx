@@ -12,19 +12,19 @@ export default function Skills(props){
         return r.keys().map(r);
     }
 
-    const databaseIcons = importAll(require.context('../icons/databases', false, /\.(svg)$/)).map(image => {
+    const databaseIcons = importAll(require.context('../icons/database', false, /\.(svg)$/)).map(image => {
         return {
             address: image,
             name: parseFileName(image)
         }
     })
-    const frameworkIcons = importAll(require.context('../icons/frameworks', false, /\.(svg)$/)).map(image => {
+    const frameworkIcons = importAll(require.context('../icons/framework', false, /\.(svg)$/)).map(image => {
         return {
             address: image,
             name: parseFileName(image)
         }
     })
-    const languageIcons = importAll(require.context('../icons/languages', false, /\.(svg)$/)).map(image => {
+    const languageIcons = importAll(require.context('../icons/language', false, /\.(svg)$/)).map(image => {
         return {
             address: image,
             name: parseFileName(image)
