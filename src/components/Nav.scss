@@ -44,8 +44,8 @@ html {
 }
 
 @media only screen and (max-width: 700px) {
-    a {
-        padding: 3px;
+    .navLink {
+        padding: 10px;
         font-size: 16px;
     }
 }
