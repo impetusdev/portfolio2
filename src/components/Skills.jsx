@@ -19,7 +19,6 @@ export default function Skills(props){
             name: parseFileName(image)
         }
     })
-    console.log('databaseIcons:', databaseIcons);
 
     const frameworkIcons = importAll(require.context('../icons/frameworks', false, /\.(svg)$/)).map(image => {
         return {
