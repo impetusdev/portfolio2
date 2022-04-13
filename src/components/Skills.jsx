@@ -8,11 +8,18 @@ function parseFileName(inputFileLoc) {
 
 
 export default function Skills(props){
+    const iconFolders = [ 'Languages', 'Frameworks', 'Databases', 'Learning' ];
+
     function importAll(r) {
         return r.keys().map(r);
     }
 
-    const databaseIcons = importAll(require.context('../icons/database', false, /\.(svg)$/)).map(image => {
+    const hello = iconFolders.map(folder => {
+        return 'hello';
+    })
+
+    
+    const databaseIcons = importAll(require.context('../icons/Databases', false, /\.(svg)$/)).map(image => {
         return {
             address: image,
             name: parseFileName(image)
@@ -22,19 +29,19 @@ export default function Skills(props){
 
     console.log('databaseIcons:', databaseIcons);
 
-    const frameworkIcons = importAll(require.context('../icons/framework', false, /\.(svg)$/)).map(image => {
+    const frameworkIcons = importAll(require.context('../icons/Frameworks', false, /\.(svg)$/)).map(image => {
         return {
             address: image,
             name: parseFileName(image)
         }
     })
-    const languageIcons = importAll(require.context('../icons/language', false, /\.(svg)$/)).map(image => {
+    const languageIcons = importAll(require.context('../icons/Languages', false, /\.(svg)$/)).map(image => {
         return {
             address: image,
             name: parseFileName(image)
         }
     })
-    const learningIcons = importAll(require.context('../icons/learning', false, /\.(svg)$/)).map(image => {
+    const learningIcons = importAll(require.context('../icons/Learning', false, /\.(svg)$/)).map(image => {
         return {
             address: image,
             name: parseFileName(image)
