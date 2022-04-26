@@ -1,9 +1,9 @@
 @import "./variables.scss";
 h1 {
-    font-family: 'Merriweather', serif;
+    font-family: $font-name, $font-type;
     font-size: 110px;
     margin: 67 0 0 0;
-    font-weight: 900px;
+    font-weight: 200px;
     color: $links;
 }
 
@@ -40,8 +40,8 @@ h1 {
 }
 
 h3 {
-    font-family: 'Merriweather', serif;
-    font-weight: 400px;
+    font-family: $font-name, $font-type;
+    font-weight: 200px;
     color: $text;
     font-size: 30px;
     margin: 10px;
