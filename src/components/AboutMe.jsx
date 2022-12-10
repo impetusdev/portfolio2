@@ -8,21 +8,22 @@ export default function AboutMe(props) {
       <div className="container">
         <h1 className="title">About Me</h1>
         <section>
-          I'm a Sydney based software developer, with a background in mechanical
-          engineering, marketing, finance and customer service. In the process
-          of pivoting my career trajectory I completed General Assembly's
-          Software Engineering Immersive.
+          I'm a Sydney based software engineer currently working at Qwilr. With
+          a background in Mechanical Engineering & Economics, I developed a love
+          for problem solving and systematic thinking. I came to realise that
+          these interests were a strong match for the software industry. So in
+          early 2021 I decided to pivot my career.
         </section>
         <section>
-          From my time in leadership & financial modelling within the UTS
-          Motorsports Electric team and a small startup, I found a love for
-          abstract problem solving, communicating ideas vertically and
-          horizontally to stakeholders. This ultimately led me to study software
-          engineering in my spare time and then to the General Assembly Software
-          Engineering Immersive where I have been deepening my understanding of
-          computation and web development. I am immensely motivated not only by
-          the beauty of the craft but also my personal mission to move humanity
-          forward.
+          After the first few months of self study, I looked to accelerate my
+          path into industry by I attending the 12 week General Assembly
+          Software Engineering Immersive. After the completion of which, I was
+          offered a role as an Instructional Associate by the bootcamp
+          administrators. In this role, I assisted other students as they
+          learned to code. After this I began work at Qwilr, where I operate in
+          team Bolt where we work on integrations & scalability. In this role, I
+          have gained experience with our AWS architecture, design patterns, and
+          other aspects of our MERN tech stack.
         </section>
       </div>
     </div>
