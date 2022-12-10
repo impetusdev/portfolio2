@@ -14,7 +14,7 @@ export default function AboutMe(props) {
           Software Engineering Immersive.
         </section>
         <section>
-          From my time in leadership & financial modeling within the UTS
+          From my time in leadership & financial modelling within the UTS
           Motorsports Electric team and a small startup, I found a love for
           abstract problem solving, communicating ideas vertically and
           horizontally to stakeholders. This ultimately led me to study software
