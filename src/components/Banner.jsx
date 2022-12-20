@@ -1,4 +1,5 @@
 import "./Banner.scss";
+import { DownArrow } from "./DownArrower/DownArrow";
 
 export default function Banner(props) {
   return (
@@ -7,6 +8,7 @@ export default function Banner(props) {
       <div id="blur"></div>
       <h1 id="name">Laurence Qi</h1>
       <h2 id="sub-heading">Junior Software Engineer @ Qwilr</h2>
+      <DownArrow />
     </div>
   );
 }
