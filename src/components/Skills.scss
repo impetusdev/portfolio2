@@ -22,8 +22,8 @@ h1 {
   height: auto; /* height */
   position: relative; /* position */
   border-radius: 10px; /* border radius */
-  padding: 10px; /* padding */
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); /* box shadow */
+  padding: $section-padding; /* padding */
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.5); /* box shadow */
   border: 2px solid $background; /* border */
   background: linear-gradient(45deg, $section, #f2f2f2);
 }
@@ -50,7 +50,7 @@ h3 {
 
 figure {
   display: inline-block;
-  margin: 15px 10px 15px 10px;
+  margin: $section-padding 10px $section-padding 10px;
 }
 
 figcaption {

@@ -6,6 +6,7 @@
 
 .project img {
   width: 35vw;
+  padding: 15px;
 }
 
 section {
@@ -32,7 +33,7 @@ a {
   position: relative;
   text-decoration: none;
   color: $text;
-  margin: 0px 20px 20px 20px;
+  margin: 0px $section-padding $section-padding $section-padding;
   font-size: 20px;
 }
 
