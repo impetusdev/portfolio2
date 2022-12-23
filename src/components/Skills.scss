@@ -8,24 +8,29 @@ h1 {
 }
 
 .section {
-  size: 100%;
   min-height: 100vh;
-  background-color: $color1;
+  background-color: $background;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .container {
-  background-color: $color4;
-  width: 60vw;
-  margin: 100px 0 100px 0;
-  height: auto;
-  position: relative;
-  border-radius: 20px;
-  padding: 10px;
+  background-color: $section; /* background color */
+  width: 60vw; /* width */
+  margin: 100px 0 100px 0; /* top and bottom margin */
+  height: auto; /* height */
+  position: relative; /* position */
+  border-radius: 10px; /* border radius */
+  padding: 10px; /* padding */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); /* box shadow */
+  border: 2px solid $background; /* border */
+  background: linear-gradient(
+    to bottom,
+    $links,
+    $section
+  ); /* gradient background */
 }
-
 .title {
   color: $text;
   margin: 0;

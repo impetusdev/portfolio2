@@ -1,37 +1,37 @@
 @import "./variables.scss";
 .footer {
-    height: 10vh;
-    margin: auto;
+  height: 10vh;
+  margin: auto;
 }
 
 .footer h3 {
-    margin-top: 20px;
-    color: $color1;
-    padding: 0.5vw;
+  margin-top: 20px;
+  color: $background;
+  padding: 0.5vw;
 }
 
 .footer img {
-    width: 3vw;
-    padding: 0.5vw;
+  width: 3vw;
+  padding: 0.5vw;
 }
 
 .links {
-    margin: auto;
-    width: 20%;
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  margin: auto;
+  width: 20%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer a {
-    top: 50%;
-    /* account for padding and border if not using box-sizing: border-box; */
+  top: 50%;
+  /* account for padding and border if not using box-sizing: border-box; */
 }
 
 @media only screen and (max-width: 700px) {
-    .footer img {
-        width: 10vw;
-        padding: 0.5vw;
-    }
+  .footer img {
+    width: 10vw;
+    padding: 0.5vw;
+  }
 }
