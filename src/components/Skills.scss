@@ -25,11 +25,7 @@ h1 {
   padding: 10px; /* padding */
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); /* box shadow */
   border: 2px solid $background; /* border */
-  background: linear-gradient(
-    to bottom,
-    $links,
-    $section
-  ); /* gradient background */
+  background: linear-gradient(45deg, $section, #f2f2f2);
 }
 .title {
   color: $text;
