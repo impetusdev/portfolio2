@@ -7,10 +7,10 @@ export default function Project({ title, imgSrc, description, demo, repo }) {
       <img src={imgSrc} alt="yo" loading="lazy" />
       <section>{description}</section>
       <div className="links">
-        <a className="underline" href={demo}>
+        <a className="external-link" href={demo}>
           DEMO
         </a>
-        <a className="underline" href={repo}>
+        <a className="external-link" href={repo}>
           REPO
         </a>
       </div>

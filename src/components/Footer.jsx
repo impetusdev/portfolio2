@@ -7,7 +7,7 @@ export default function Footer(props) {
 
       <div className="links">
         <a
-          className="connect"
+          className="external-link"
           href="https://github.com/impetusdev"
           target="_blank"
           rel="noreferrer"
@@ -15,7 +15,7 @@ export default function Footer(props) {
           <img src="reachout/Github.svg" alt="github" />
         </a>
         <a
-          className="connect"
+          className="external-link"
           href="https://www.linkedin.com/in/laurence-qi-a4944513b/"
           target="_blank"
           rel="noreferrer"
@@ -23,7 +23,7 @@ export default function Footer(props) {
           <img src="reachout/LinkedIn.svg" alt="LinkedIn" />
         </a>
         <a
-          className="connect"
+          className="external-link"
           href="https://twitter.com/life_is_a_model"
           target="_blank"
           rel="noreferrer"
