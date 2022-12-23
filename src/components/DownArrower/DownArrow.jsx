@@ -2,8 +2,10 @@ import "./DownArrow.scss";
 
 export function DownArrow() {
   return (
-    <div class="downArrow bounce">
-      <img width="100" height="100" alt="" src="DownArrow.svg" /> //fix this src link
-    </div>
+    <a href="#aboutMe" class="arrow-container">
+      <div class="arrow"></div>
+      <div class="arrow"></div>
+      <div class="arrow"></div>
+    </a>
   );
 }
