@@ -1,76 +1,76 @@
 @import "./variables.scss";
 .project {
-    // background-color: $color3;
-    border-radius: 20px;
+  // background-color: $color3;
+  border-radius: 20px;
 }
 
 .project img {
-    width: 35vw;
+  width: 35vw;
 }
 
 section {
-    padding: 20px 10% 20px 10%;
-    text-align: justify;
-    max-width: 750px;
-    margin: auto;
+  padding: 20px 10% 20px 10%;
+  text-align: justify;
+  max-width: 750px;
+  margin: auto;
 }
 
 a {
-    color: $text;
+  color: $text;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 * {
-    font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 p {
-    text-align: center;
+  text-align: center;
 }
 
 a {
-    position: relative;
-    text-decoration: none;
-    color: $text;
-    margin: 0px 20px 20px 20px;
-    font-size: 20px;
+  position: relative;
+  text-decoration: none;
+  color: $text;
+  margin: 0px 20px 20px 20px;
+  font-size: 20px;
 }
 
-a::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 0;
-    height: 2px;
-    background-color: $text;
-    transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+.connect::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 2px;
+  background-color: $text;
+  transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 .navLink::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 0;
-    height: 2px;
-    background-color: $links;
-    transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 2px;
+  background-color: $links;
+  transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 @media (hover: hover) and (pointer: fine) {
-    a:hover::before {
-        left: 0;
-        right: auto;
-        width: 100%;
-    }
+  a:hover::before {
+    left: 0;
+    right: auto;
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 700px) {
-    .project img {
-        width: 70vw;
-    }
-    section {
-        padding: 10px;
-    }
+  .project img {
+    width: 70vw;
+  }
+  section {
+    padding: 10px;
+  }
 }
