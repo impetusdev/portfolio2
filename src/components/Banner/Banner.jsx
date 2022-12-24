@@ -1,5 +1,5 @@
 import "./Banner.scss";
-import { DownArrow } from "./DownArrow/DownArrow";
+import { DownArrow } from "../DownArrow/DownArrow";
 
 export default function Banner(props) {
   return (

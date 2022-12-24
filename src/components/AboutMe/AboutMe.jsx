@@ -1,8 +1,6 @@
 import "./AboutMe.scss";
-import "./Skills";
 
 export default function AboutMe(props) {
-  //TODO: put in links to the general assembly course & also to the reach out portion of the page.
   return (
     <div className="section" id="aboutMe">
       <div className="container">
