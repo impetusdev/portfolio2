@@ -15,6 +15,16 @@ export default function Stats(props) {
         <div class="testing"></div>
         <div class="testing"></div>
         <div class="testing"></div>
+        <div class="testing"></div>
+        <div class="testing"></div>
+        <div class="testing"></div>
+        <div class="testing"></div>
+        <div class="testing"></div>
+        <div class="testing"></div>
+        <div class="testing"></div>
+        <div class="testing"></div>
+        <div class="testing"></div>
+        <div class="testing"></div>
       </div>
     </div>
   );
