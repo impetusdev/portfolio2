@@ -5,7 +5,7 @@
   height: 40vh;
 }
 
-$animation2: 10s;
+$animation2: 15s;
 
 .testing {
   width: 5%;
@@ -78,7 +78,6 @@ $animation2: 10s;
 .testing:nth-child(10) {
   animation-delay: -0.45 * $animation2;
 }
-
 .testing:nth-child(11) {
   animation-delay: -0.5 * $animation2;
 }
