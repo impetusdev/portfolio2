@@ -5,7 +5,7 @@
   height: 40vh;
 }
 
-$animation2: 5s;
+$animation2: 10s;
 
 .testing {
   width: 5%;
@@ -27,10 +27,10 @@ $animation2: 5s;
     background: #ffb3b3;
   }
   50% {
-    background: #ffffcc;
+    background: #fff8cc;
   }
   75% {
-    background: #b3ccff;
+    background: #f3ccff;
   }
   100% {
     background: #b3d9ff;
