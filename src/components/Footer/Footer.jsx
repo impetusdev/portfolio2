@@ -1,6 +1,11 @@
 import "./Footer.scss";
+import resume from "./Laurence_Qi_Software_Engineer.pdf";
 
 export function Footer(props) {
+  const openResume = () => {
+    window.open("c", "_blank");
+  };
+
   return (
     <div className="footer" id="footer">
       <h3>Connect With Me</h3>
@@ -32,7 +37,7 @@ export function Footer(props) {
         </a>
         <a
           className="external-link"
-          href="https://twitter.com/life_is_a_model"
+          href={resume}
           target="_blank"
           rel="noreferrer"
         >
