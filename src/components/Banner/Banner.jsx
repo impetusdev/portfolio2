@@ -1,7 +1,7 @@
 import "./Banner.scss";
 import { DownArrow } from "../DownArrow/DownArrow";
 
-export default function Banner(props) {
+export function Banner(props) {
   return (
     <div className="Banner">
       <img id="profile" src="profile.png" alt="Laurence Qi" />

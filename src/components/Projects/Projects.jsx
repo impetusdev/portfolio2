@@ -2,7 +2,7 @@ import Project from "./Project";
 import "../Skills/Skills.scss";
 import "./Projects.scss";
 
-export default function Projects(props) {
+export function Projects(props) {
   return (
     <div className="section" id="projects">
       <div className="container">

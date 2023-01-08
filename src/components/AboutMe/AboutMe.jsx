@@ -1,6 +1,6 @@
 import "./AboutMe.scss";
 
-export default function AboutMe(props) {
+export function AboutMe(props) {
   return (
     <div className="section" id="aboutMe">
       <div className="container">

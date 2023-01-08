@@ -1,7 +1,7 @@
 import "./Stats.scss";
 import "./Stats";
 
-export default function Stats(props) {
+export function Stats(props) {
   return (
     <div className="section" id="stats">
       <div className="container" id="stat-container">

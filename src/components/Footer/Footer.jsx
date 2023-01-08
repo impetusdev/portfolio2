@@ -1,6 +1,6 @@
 import "./Footer.scss";
 
-export default function Footer(props) {
+export function Footer(props) {
   return (
     <div className="footer" id="footer">
       <h3>Connect With Me</h3>

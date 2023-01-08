@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "./Nav.scss";
 
-export default function Banner(props) {
+export function Banner(props) {
   const [offset, setOffset] = useState(0);
 
   // whenever the user scrolls evaluate if the window Y position > nav bar position, if so change the nav to sticky.

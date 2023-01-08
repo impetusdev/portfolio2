@@ -8,7 +8,7 @@ function parseFileName(inputFileLoc) {
   return result[1];
 }
 
-export default function Skills(props) {
+export function Skills(props) {
   function importAll(r) {
     return r.keys().map(r);
   }
