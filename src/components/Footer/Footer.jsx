@@ -1,7 +1,7 @@
 import "./Footer.scss";
 import resume from "./Laurence_Qi_Software_Engineer.pdf";
 
-export function Footer(props) {
+export function Footer() {
   return (
     <div className="footer" id="footer">
       <h3>Connect With Me</h3>
