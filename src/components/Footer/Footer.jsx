@@ -30,6 +30,14 @@ export function Footer(props) {
         >
           <img src="reachout/Twitter.svg" alt="Twitter" />
         </a>
+        <a
+          className="external-link"
+          href="https://twitter.com/life_is_a_model"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img src="reachout/Resume.svg" alt="Resume" />
+        </a>
       </div>
     </div>
   );
