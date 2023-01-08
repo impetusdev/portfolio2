@@ -10,7 +10,7 @@ $animation2: 15s;
 .testing {
   width: 5%;
   height: 40vh;
-  // border-radius: 5%;
+  border-radius: 5px;
   background: #b3d9ff;
   animation: moveLeftToRight $animation2 linear infinite,
     changeColor $animation2 linear infinite;
