@@ -17,7 +17,7 @@ export function Footer() {
         </a>
         <a
           className="external-link"
-          href="https://www.linkedin.com/in/laurence-qi-a4944513b/"
+          href="https://www.linkedin.com/in/laurenceqi"
           target="_blank"
           rel="noreferrer"
         >
